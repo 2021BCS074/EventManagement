@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #e8e8e8;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-header {
+            background-color: #87CEFA;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .form-label {
+            background-color: #4682B4;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            flex-basis: 30%;
+            text-align: center;
+        }
+
+        .form-input {
+            flex-basis: 65%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .button {
+            background-color: #6c757d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">Event Management System</div>
+        <form>
+            <div class="form-group">
+                <label class="form-label" for="userId">User Id</label>
+                <input class="form-input" type="text" id="userId" placeholder="Enter User Id" />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="password" id="password" placeholder="Enter Password" />
+            </div>
+            <div class="form-buttons">
+                <button type="button" class="button">Cancel</button>
+                <button type="submit" class="button">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

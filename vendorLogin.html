@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8e8e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 400px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        .title {
+            background-color: #4da6ff;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px 10px 0 0;
+        }
+        .input-group {
+            margin: 15px 0;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+        }
+        .input-group input {
+            width: calc(100% - 10px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .button-group {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-group .cancel {
+            background-color: #d9534f;
+            color: white;
+        }
+        .button-group .login {
+            background-color: #5cb85c;
+            color: white;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .nav-buttons button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-buttons">
+            <button>CHART</button>
+            <button>BACK</button>
+        </div>
+        <div class="title">Event Management System</div>
+        <form>
+            <div class="input-group">
+                <label for="userid">User ID</label>
+                <input type="text" id="userid" placeholder="Vendor">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Vendor">
+            </div>
+            <div class="button-group">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="submit" class="login">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

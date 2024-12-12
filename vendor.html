@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4169E1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dashboard-container {
+            width: 500px;
+            padding: 20px;
+            background-color: #3b5998;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #fff;
+        }
+
+        .dashboard-header {
+            background-color: #d3d3d3;
+            padding: 10px;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            border-radius: 8px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .dashboard-button {
+            background-color: #d3d3d3;
+            color: #000;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            width: 110px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .dashboard-button:hover {
+            background-color: #b0b0b0;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            Welcome <br> Vendor
+        </div>
+        <div class="button-group">
+            <button class="dashboard-button">Your Item</button>
+            <button class="dashboard-button">Add New Item</button>
+            <button class="dashboard-button">Transaction</button>
+            <button class="dashboard-button">LogOut</button>
+        </div>
+    </div>
+</body>
+</html>
