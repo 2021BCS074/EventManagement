@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3d3d3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .popup-container {
+            background-color: #f2f2f2;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .popup-container h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .popup-container h3 {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .popup-container button {
+            width: 150px;
+            height: 40px;
+            background-color: #4682B4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .popup-container button:hover {
+            background-color: #5A9BD5;
+        }
+
+        .continue-shopping {
+            width: 200px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-container">
+        <h2>Popup</h2>
+        <h3>THANK YOU</h3>
+        <button>Total Amount</button>
+        <div>
+            <button>Name</button>
+            <button>Number</button>
+        </div>
+        <div>
+            <button>E-mail</button>
+            <button>Payment Method</button>
+        </div>
+        <div>
+            <button>Address</button>
+            <button>State</button>
+        </div>
+        <div>
+            <button>City</button>
+            <button>PinCode</button>
+        </div>
+        <button class="continue-shopping">Continue Shopping</button>
+    </div>
+</body>
+</html>
